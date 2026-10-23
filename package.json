@@ -21,6 +21,15 @@
   },
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/src/index.d.ts",
+      "require": "./dist/src/index.js",
+      "import": "./dist/src/index.js",
+      "default": "./dist/src/index.js"
+    },
+    "./package.json": "./package.json"
+  },
   "bin": {
     "aiax-validate": "dist/src/cli.js",
     "aiax-validator": "dist/src/cli.js"
