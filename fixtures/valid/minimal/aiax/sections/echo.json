@@ -1,0 +1,42 @@
+{
+  "aiax_version": "0.1",
+  "section_id": "echo",
+  "purpose": "Echo a short message back to the caller.",
+  "inputs": {
+    "type": "object",
+    "required": [
+      "message"
+    ],
+    "properties": {
+      "message": {
+        "type": "string"
+      }
+    }
+  },
+  "outputs": {
+    "type": "object",
+    "properties": {
+      "echo": {
+        "type": "string"
+      }
+    }
+  },
+  "pricing": {
+    "model": "per_call",
+    "amount": "0.01",
+    "currency": "USDC",
+    "rail": "x402"
+  },
+  "examples": [
+    {
+      "description": "Echo one word.",
+      "request": {
+        "message": "hi"
+      },
+      "response": {
+        "echo": "hi"
+      }
+    }
+  ],
+  "pact_mandate_template": null
+}

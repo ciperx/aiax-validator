@@ -1,0 +1,48 @@
+{
+  "name": "aiax-validator",
+  "version": "0.1.0",
+  "description": "Validate and score any site's AIAX v0.1 manifest and capability sections",
+  "keywords": [
+    "aiax",
+    "agent",
+    "validator",
+    "cli",
+    "well-known"
+  ],
+  "license": "MIT",
+  "author": "ciperx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ciperx/aiax-validator.git"
+  },
+  "homepage": "https://github.com/ciperx/aiax-validator#readme",
+  "bugs": {
+    "url": "https://github.com/ciperx/aiax-validator/issues"
+  },
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "bin": {
+    "aiax-validate": "dist/src/cli.js",
+    "aiax-validator": "dist/src/cli.js"
+  },
+  "files": [
+    "dist/src",
+    "fixtures",
+    "README.md",
+    "RUBRIC.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/test/*.test.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  }
+}

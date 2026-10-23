@@ -1,0 +1,20 @@
+{
+  "aiax_version": "0.1",
+  "product": {
+    "name": "Minimal agent",
+    "one_line_purpose": "Sells one thing to agents, briefly.",
+    "domain": "agent-services"
+  },
+  "entry_points": [
+    {
+      "id": "echo",
+      "url": "/aiax/sections/echo.json",
+      "purpose": "Echoes a message back.",
+      "est_tokens": 120
+    }
+  ],
+  "pricing_summary": "0.01 USDC per call over x402 on Base.",
+  "trust_signals": {},
+  "mcp_endpoint": null,
+  "updated_at": "2026-10-20T10:00:00Z"
+}
